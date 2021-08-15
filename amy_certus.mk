@@ -17,14 +17,8 @@
 # Inherit from device
 $(call inherit-product, device/xiaomi/certus/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-
-# Official tag
-NAD_BUILD_TYPE := OFFICIAL
-
-# Boot animaton
-TARGET_BOOT_ANIMATION_RES := 720
+# Inherit some common amyROM stuff.
+$(call inherit-product, vendor/amy/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := certus
@@ -32,11 +26,3 @@ PRODUCT_NAME := nad_certus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6 / Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Override fingerprint from stock
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cactus-user 9 PPR1.180610.011 V10.4.4.0.PCBCNXM release-keys" \
-    PRODUCT_NAME="certus" \
-    TARGET_DEVICE="certus"
-
-BUILD_FINGERPRINT := xiaomi/cactus/cactus:9/PPR1.180610.011/V10.4.4.0.PCBCNXM:user/release-keys
