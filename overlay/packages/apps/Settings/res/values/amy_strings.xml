@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="amyrom_maintainer">Siddharth</string>
+
+    <string name="amy_device_platform_summary">MT6761/MT6762</string>
+    <string name="amy_chipset_type_summary">Mediatek Helio A22/P22</string>
+    <string name="amy_gpu_summary">PowerVR GE8320</string>
+    <string name="amy_camera_mp_summary">12MP+5MP Dual Camera (Redmi 6)
+13MP Single Camera (6A)</string>
+    <string name="amy_screen_type_summary">IPS LCD HD+ 5.45" Screen</string>
 </resources>
